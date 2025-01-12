@@ -1,0 +1,23 @@
+.textItems > * > * > * {
+  margin: 20px 0;
+}
+.marker {
+  position: relative;
+  z-index: 2;
+}
+.marker::before {
+  z-index: -1;
+  position: absolute;
+  content: url("../../assets//question.gif");
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #e1eacd;
+  top: -40px;
+  left: -200px;
+}
+
+.joinBtn:hover {
+  scale: 1.2;
+  transition: 200ms ease;
+}
